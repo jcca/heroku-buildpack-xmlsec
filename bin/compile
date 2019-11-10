@@ -21,9 +21,9 @@ echo "-----> Exporting path"
 
 PROFILE_PATH="$BUILD_DIR/.profile.d/xmlsec1.sh"
 mkdir -p $(dirname $PROFILE_PATH)
-echo 'export PATH="$PATH:vendor/xmlsec1/bin"' >> $PROFILE_PATH
-echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/xmlsec1/lib"' >> $PROFILE_PATH
-echo 'export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:vendor/xmlsec1/lib/pkgconfig"' >> $PROFILE_PATH
+echo 'export PATH="$PATH:$INSTALL_PATH/bin"' >> $PROFILE_PATH
+echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$INSTALL_PATH/lib"' >> $PROFILE_PATH
+echo 'export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:$INSTALL_PATH/lib/pkgconfig"' >> $PROFILE_PATH
 
 echo "-----> Exporting flags"
 
