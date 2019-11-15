@@ -34,3 +34,4 @@ export CFLAGS="-I${INSTALL_PATH}/include/xmlsec1"
 # finish
 
 echo "-----> Installed xmlsec1"
+source $BUILD_DIR/.profile.d/xmlsec1.sh
